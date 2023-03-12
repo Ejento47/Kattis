@@ -18,37 +18,34 @@ public class DelimiterSoup {
         for(String chr: arr){
 
             if (chr.equals(")")){
-                if(checker.isEmpty() || !checker.peek().equals("(")){
+                if(checker.isEmpty() || !checker.pop().equals("(")){
                     System.out.println(chr + " " + var);
                     br.close();
                     return;
                 }
                 else{
-                    checker.pop();
                     var++;
                     continue;
                 }
             }
             if (chr.equals("}")){
-                if(checker.isEmpty() || !checker.peek().equals("{")){
+                if(checker.isEmpty() || !checker.pop().equals("{")){
                     System.out.println(chr + " " + var);
                     br.close();
                     return;
                 }
                 else{
-                    checker.pop();
                     var++;
                     continue;
                 }
             }
             if (chr.equals("]")){
-                if(checker.isEmpty() || !checker.peek().equals("[")){
+                if(checker.isEmpty() || !checker.pop().equals("[")){
                     System.out.println(chr + " " + var);
                     br.close();
                     return;
                 }
                 else{
-                    checker.pop();
                     var++;
                     continue;
                 }
