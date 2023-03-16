@@ -1,6 +1,4 @@
-import javax.imageio.IIOException;
 import java.io.*;
-import java.nio.Buffer;
 import java.util.*;
 
 public class kattisquest {
